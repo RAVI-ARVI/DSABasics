@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing</title>
+    <script>
+
+        // Traversing meaning :  going through each element in an array one by one
+        // let data = [10, 20, 30, 40, 45, 50, 53]
+
+        // for (let i = 0; i < data.length; i++) {
+        //     console.warn(data[i])
+        //     document.write(`${data[i]} <br/>`)
+
+
+        // }
+        function GetElement() {
+            let position = document.getElementById('element').value
+            position = parseInt(position)
+            let data = [10, 20, 30, 40, 45, 50, 53]
+
+
+            if (data.length > position && typeof position === "number") {
+                document.write(data[position])
+            } else {
+                document.write("Enter a Valid Input")
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="element">
+    <button onclick="GetElement()">Get Element</button>
+
+</body>
+
+</html>
